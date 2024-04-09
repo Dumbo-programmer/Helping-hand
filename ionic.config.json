@@ -1,0 +1,7 @@
+{
+  "name": "Helping Hand",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
