@@ -53,7 +53,7 @@ const signOut = async () => {
   try {
     await auth.signOut();
     // Sign out successful, navigate to sign-in page
-    router.push('/signin');
+    router.push('/signup');
   } catch (error) {
     console.error('Error signing out:', error);
     // Handle sign-out error

@@ -6,7 +6,9 @@
       <ion-content :fullscreen="true" class="ion-padding ion-text-center">
         <div class="logo-container">
         <img src="../../resources/icon.png" alt="App Icon" class="icon" />
-        <p class="subtitle">Help the ones in need by allocating a bit of your attention and time with the aid of Helping Hand</p>
+        <br>
+        <p class="subtitle">Help the ones in need by allocating a bit of your attention and time towards advertisement.</p>
+        <p class="subtitle">Via helping hand you can watch advertisement to donate </p>
   
     </div>
               <div class="button-container">
@@ -50,7 +52,7 @@
 }
 
 .subtitle {
-  margin-top: 10px;
+  margin-top: 4px;
   font-size: 14px; 
   text-align: center;
 }
