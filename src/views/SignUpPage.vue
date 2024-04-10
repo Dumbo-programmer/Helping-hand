@@ -7,7 +7,7 @@
     </ion-header>
     <ion-content :fullscreen="true" class="ion-padding ion-text-center">
       <div class="logo-container">
-        <img src="../../resources/icon.png" alt="App Logo" class="logo" />
+        <a href="/"><img src="../../resources/icon.png" alt="App Logo" class="logo" /></a>
       </div>
       <div class="form-container">
         <ion-item>
@@ -39,6 +39,8 @@ import { defineComponent } from 'vue';
 //import { useRouter } from 'vue-router';
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import 'firebase/firestore';
+
 firebase.initializeApp({
     apiKey: "AIzaSyDsqaru9FWR8knx4fYnIgR5UJmBl6fIU_c",
     authDomain: "helping-hand-a9d72.firebaseapp.com",
@@ -92,7 +94,7 @@ signup(){
         })
         .catch((error) => {
           console.error('Error storing user information:', error);
-          alert('An error occurred during signup.');
+          alert('An error occurred during signup: '+error);
         });
       } else {
         console.error('Signup error: User is null');
@@ -101,7 +103,7 @@ signup(){
     })
     .catch((error) => {
       console.error('Signup error:', error);
-      alert('An error occurred during signup.');
+      alert('An error occurred during signup: '+error);
     });
   }else{
      alert('Please fill in all fields.');

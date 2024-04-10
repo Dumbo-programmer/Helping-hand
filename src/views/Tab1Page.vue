@@ -2,20 +2,21 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Dashboard</ion-title>
+        <ion-title>Home</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true" class="ion-padding ion-text-center">
+      <h1 id="dash">Dashboard</h1>
       <div v-if="userData">
-        <h1>Welcome, {{ userData.name }}</h1>
+        <h3>Welcome, {{ userData.name }}!</h3>
         <!-- Display other user data here -->
         <p>Email: {{ userData.email }}</p>
         <p>Contact No: {{ userData.phoneNumber }}</p>
         <p>Contributed: {{ userData.money }}</p>
       </div>
-    <!--   <div v-else>
+     <div v-else>
         <p>Loading user data...</p>
-      </div>-->
+      </div>
     </ion-content>
   </ion-page>
 </template>
@@ -70,5 +71,12 @@ window.location.href="/signup"
 </script>
 
 <style scoped>
-/* Add your styles to center content here */
+#dash{
+  text-decoration: underline;
+  padding-bottom: 5vh;
+}
+p{
+  padding: 2px;
+  text-shadow: 1in;
+}
 </style>

@@ -7,7 +7,7 @@
     </ion-header>
     <ion-content :fullscreen="true" class="ion-padding ion-text-center">
       <div class="logo-container">
-        <img src="../../resources/icon.png" alt="App Logo" class="logo" />
+        <a href="/"><img src="../../resources/icon.png" alt="App Logo" class="logo" /></a>
       </div>
       <div class="form-container">
         <ion-item>
@@ -69,7 +69,7 @@ if(this.email && this.password){
     })
     .catch(error => {
       console.error('Login error:', error);
-      // Handle login error, such as displaying a message to the user
+      alert('An error occurred during signup: '+error);
     });
   }else{
     alert("Fill in the fields please")
