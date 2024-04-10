@@ -46,12 +46,12 @@ export default {
       });
 
       const options: BannerAdOptions = {
-        adId: 'ca-app-pub-9633054417275249/4933901865',
+        adId: 'ca-app-pub-3940256099942544/9214589741',//'ca-app-pub-9633054417275249/4933901865',
         adSize: BannerAdSize.BANNER,
         position: BannerAdPosition.BOTTOM_CENTER,
         margin: 0,
-        // isTesting: true
-        // npa: true
+        isTesting: true,
+        npa: true
       };
 
       AdMob.showBanner(options);
