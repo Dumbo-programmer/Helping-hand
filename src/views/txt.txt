@@ -1,0 +1,28 @@
+ else {
+        const userDataFromStorage = localStorage.getItem('userData');
+        if (userDataFromStorage) {
+          userData.value = JSON.parse(userDataFromStorage);
+        } else {
+          router.push('/splash');
+        }
+      }
+
+
+
+      const router = useRouter();
+const email = ref('');
+const password = ref('');
+const login = () => {
+  return firebase.auth().signInWithEmailAndPassword(email.value, password.value)
+    .then(() => {
+      router.push('/tabs/tab1');
+    })
+    .catch((error) => {
+      console.error('Login error:', error);
+      router.push('/signup');
+    });
+};
+
+const goToSignup = () => {
+  router.push('/signup');
+};
