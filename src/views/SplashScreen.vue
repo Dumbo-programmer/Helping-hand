@@ -7,6 +7,7 @@
         <div class="logo-container">
         <img src="../../resources/icon.png" alt="App Icon" class="icon" />
         <br>
+        <h1>Helping Hand</h1>
         <p class="subtitle">Help the ones in need by allocating a bit of your attention and time towards advertisement.</p>
         <p class="subtitle">Via helping hand you can watch advertisement to donate </p>
   
@@ -55,6 +56,7 @@
   margin-top: 4px;
   font-size: 14px; 
   text-align: center;
+  color: rgb(173, 173, 173);
 }
 
 
